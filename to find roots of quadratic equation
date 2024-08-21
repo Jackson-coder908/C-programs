@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+   float a,b,c,k;
+   printf("Enter values of a,b,c in ax^2+bx+c:");
+   scanf("%f,%f,%f",&a,&b,&c);
+   k=(b*b-4*a*c);
+   if(k<0)
+       printf("Imaginary roots");
+   else
+       printf("roots are %f and %f",(-b+sqrt(k))/(2*a),(-b-sqrt(k))/(2*a));
+   return 0;
+}
